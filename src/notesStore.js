@@ -1,6 +1,6 @@
 
 import { nanoid } from "nanoid"
-import { PushNotificationIOS } from "react-native"
+om "react-native"
 
 
 export function createNotesStore(){
@@ -12,7 +12,7 @@ export function createNotesStore(){
             })
         },
         removeNotes(id){
-            
+            this.notes =this.notes.filter(note => note.id !== id)
         }
     }
 }
